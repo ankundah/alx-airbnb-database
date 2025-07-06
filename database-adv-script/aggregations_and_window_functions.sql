@@ -1,3 +1,4 @@
+--1. Total Bookings by User
 SELECT 
   u.user_id,
   u.first_name,
@@ -8,6 +9,7 @@ LEFT JOIN bookings b ON u.user_id = b.user_id
 GROUP BY u.user_id, u.first_name, u.last_name
 ORDER BY total_bookings DESC;
 
+-- 2. Ranking Properties by Total Bookings
 SELECT 
   p.property_id,
   p.name AS property_name,
