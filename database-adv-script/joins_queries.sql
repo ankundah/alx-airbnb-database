@@ -23,7 +23,6 @@ SELECT
 FROM properties p
 LEFT JOIN reviews r ON p.property_id = r.property_id;
 
-
 -- 3. FULL OUTER JOIN: 
 SELECT 
   u.user_id,
@@ -35,3 +34,4 @@ SELECT
   b.end_date
 FROM users u
 FULL OUTER JOIN bookings b ON u.user_id = b.user_id;
+

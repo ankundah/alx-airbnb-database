@@ -37,9 +37,18 @@ We need a **complete picture** of the data — even unmatched entries.
 
 ---
 
-## 🧪 Sample Use Cases
+##  Sample Use Cases
 
 - Audit users who never booked
 - Show unreviewed properties
 - Generate analytics dashboards
 
+### 4. Properties with Average Rating Greater Than 4.0
+
+## What it does:
+Calculates the average review rating for each property and filters to only include those with an average above 4.0.
+
+### 5. Users with More Than 3 Bookings
+
+## What it does:
+Identifies users who have made more than 3 bookings. The subquery runs once per user (correlated), counting their individual bookings.
